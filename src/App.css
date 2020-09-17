@@ -37,12 +37,13 @@
   }
 }
 
-img {
+/* img {
   width: 50%;
   height: 15rem;
-}
+} */
 
-#nav-mobile{
+#navbar
+{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -62,4 +63,19 @@ li a {
   text-decoration: none;
   color: white;
   margin-right: 10px;
+}
+
+.nav-button {
+  height: 32px;
+  width: 100px;
+}
+
+.home-text {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  text-align: center;
+  width: 35%;
+  font-size: 3rem;
+  margin-left: 10px; 
 }
