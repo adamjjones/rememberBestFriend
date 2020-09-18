@@ -1,13 +1,15 @@
 import React from 'react'
 import logo from './logo.svg'
-import topleft from './images/top-left-img-2.png'
+// import topleft from './images/top-left-img-2.png'
 // import topright from './images/top-right-img.png'
+import banner from "./images/home-banner.png"
 import home from './images/home-button.png'
 import order from './images/order-button.png'
 import about from './images/about.png'
 import cart from './images/cart.png'
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom'
 import Order from './components/Order'
+import Home from './components/Home'
 import './App.css'
 
 function App() {
@@ -15,25 +17,21 @@ function App() {
     <div className="App">
       <Router>
         <nav>
-
           <ul id="navbar">
-            <Link to="/App"><img src={home} className="nav-button" /></Link>
-            <Link to="/Order"><img src={order} className="nav-button" /></Link>
-            <Link to="/About"><img src={about} className="nav-button" /></Link>
-            <Link to="/Cart"><img src={cart} className="nav-button" /></Link>
+            <li><Link to="/Home"><img src={home} className="nav-button" /></Link></li>
+            <li><Link to="/Order"><img src={order} className="nav-button" /></Link></li>
+            <li><Link to="/About"><img src={about} className="nav-button" /></Link></li>
+            <li><Link to="/Cart"><img src={cart} className="nav-button" /></Link></li>
           </ul>
-          <img src={topleft} />
-          {/* <img src={topright} /> */}
         </nav>
+        <img src={banner} id="banner" />
+        {/* <img src={topright} /> */}
         <Switch>
           <Route path="/Order" exact component={Order} />
+          <Route path="/Home" exact component={Home} />
+          <Redirect from="/" to="Home" />
         </Switch>
       </Router>
-      <div className="home-text">
-        <p>Your Pet Holds a Special Place in Your Heart.</p>
-        <p>Never judging, always caring, providing that unconditional love that will be so sorely missed.
-          Losing a pet and friend is difficult,</p>
-      </div>
     </div>
   );
 }
