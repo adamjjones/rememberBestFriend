@@ -10,6 +10,8 @@ import cart from './images/cart.png'
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom'
 import Order from './components/Order'
 import Home from './components/Home'
+import Footer from './components/Footer'
+import Privacy from './components/Privacy'
 import './App.css'
 
 function App() {
@@ -27,10 +29,15 @@ function App() {
         <img src={banner} id="banner" />
         {/* <img src={topright} /> */}
         <Switch>
-          <Route path="/Order" exact component={Order} />
           <Route path="/Home" exact component={Home} />
-          <Redirect from="/" to="Home" />
+          <Route path="/Order" exact component={Order} />
+          <Route path="/Privacy" exact component={Privacy} />
+          <Route >
+            not found
+            </Route>
+          {/* <Redirect from="/" to="Home" /> */}
         </Switch>
+        <Footer />
       </Router>
     </div>
   );
