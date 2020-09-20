@@ -76,11 +76,30 @@
 .home-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url('./DC1e.jpg');
+  width: 100%;
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    /* text-align: center; */
+    font-size:  12pt;
+    width: 100%;
+    margin: 0px;
+  }
+  .urns {
+     margin-top: 0px;
+     float: right;
+  }
 }
 
 .home-text {
   text-align: center;
-  width: 35%;
+  /* width: 35%; */
   font-size: 2.5rem;
   margin-left: 10px;
   padding-top: 2rem;
@@ -88,19 +107,19 @@
 }
 
 .home-seccol {
-  width: 35%;
+  /* width: 35%; */
   font-size: 2.5rem;
-  margin-left: 4rem;
+  margin-left: 20px;
   text-align: center;
 }
 
 .home-thirdcol {
-  width: 30%;
+  /* width: 30%; */
   margin-left: 3rem;
 }
 
 .urns {
   margin-right: 1rem;
-  width: 100%;
-  height: 50%;
+  width: 200px;
+  height: 300px;
 }
