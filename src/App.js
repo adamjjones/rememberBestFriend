@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './logo.svg'
+// import logo from './logo.svg'
 // import topleft from './images/top-left-img-2.png'
 // import topright from './images/top-right-img.png'
 import banner from "./images/home-banner.png"
@@ -12,6 +12,7 @@ import Order from './components/Order'
 import Home from './components/Home'
 import Footer from './components/Footer'
 import Privacy from './components/Privacy'
+import About from './components/About'
 import './App.css'
 
 function App() {
@@ -31,11 +32,12 @@ function App() {
         <Switch>
           <Route path="/Home" exact component={Home} />
           <Route path="/Order" exact component={Order} />
+          <Route path="/About" exact component={About} />
           <Route path="/Privacy" exact component={Privacy} />
           <Route >
             not found
             </Route>
-          {/* <Redirect from="/" to="Home" /> */}
+          <Redirect from="/" to="Home" />
         </Switch>
         <Footer />
       </Router>

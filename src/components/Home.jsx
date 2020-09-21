@@ -12,14 +12,14 @@ const Home = () => {
         <p>- a fitting way to commemorate that special relationship.</p>
       </div>
       <div className="home-seccol col col-sm-12 col-lg-4">
-        <img src="./images/home-dog.png" className="urns" />
+        <img src="./images/home-dog.png" className="urns" alt="a yellow lab dog" />
         <p>They come in all shapes and sizes, but the most important thing,
         they all hold in common
         </p>
       </div>
       <div className="home-thirdcol col col-sm-12 col-lg-3">
-        <img className="urns" src="./images/BudUrnPic.jpg" />
-        <img className="urns" src="./images/BudPlaqPic.jpg" />
+        <img className="urns" src="./images/BudUrnPic.jpg" alt="a urn for pets" />
+        <img className="urns" src="./images/BudPlaqPic.jpg" alt="another urn for pets" />
       </div>
     </div>
   )

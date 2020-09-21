@@ -121,3 +121,27 @@
   padding: 10px;
   text-align: center;
 }
+.about-header{
+  position: relative;
+  float: right;
+}
+
+.about-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.75rem;
+}
+
+@media (min-width: 800px) {
+  .about-con {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+  }
+}
+
+/* .about-para {
+  margin: 10px;
+} */
