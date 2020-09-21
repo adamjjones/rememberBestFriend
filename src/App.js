@@ -21,13 +21,13 @@ function App() {
       <Router>
         <nav>
           <ul id="navbar">
-            <li><Link to="/Home"><img src={home} className="nav-button" /></Link></li>
-            <li><Link to="/Order"><img src={order} className="nav-button" /></Link></li>
-            <li><Link to="/About"><img src={about} className="nav-button" /></Link></li>
-            <li><Link to="/Cart"><img src={cart} className="nav-button" /></Link></li>
+            <li><Link to="/Home"><img src={home} className="nav-button" alt="Button for Home" /></Link></li>
+            <li><Link to="/Order"><img src={order} className="nav-button" alt="Button for Order"/></Link></li>
+            <li><Link to="/About"><img src={about} className="nav-button" alt="Button for About"/></Link></li>
+            <li><Link to="/Cart"><img src={cart} className="nav-button" alt="Button for Cart"/></Link></li>
           </ul>
         </nav>
-        <img src={banner} id="banner" />
+        <img src={banner} id="banner" alt="Home Banner" />
         {/* <img src={topright} /> */}
         <Switch>
           <Route path="/Home" exact component={Home} />
