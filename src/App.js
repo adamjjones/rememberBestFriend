@@ -22,9 +22,9 @@ function App() {
         <nav>
           <ul id="navbar">
             <li><Link to="/Home"><img src={home} className="nav-button" alt="Button for Home" /></Link></li>
-            <li><Link to="/Order"><img src={order} className="nav-button" alt="Button for Order"/></Link></li>
-            <li><Link to="/About"><img src={about} className="nav-button" alt="Button for About"/></Link></li>
-            <li><Link to="/Cart"><img src={cart} className="nav-button" alt="Button for Cart"/></Link></li>
+            <li><Link to="/Order"><img src={order} className="nav-button" alt="Button for Order" /></Link></li>
+            <li><Link to="/About"><img src={about} className="nav-button" alt="Button for About" /></Link></li>
+            <li><Link to="/Cart"><img src={cart} className="nav-button" alt="Button for Cart" /></Link></li>
           </ul>
         </nav>
         <img src={banner} id="banner" alt="Home Banner" />
@@ -34,9 +34,6 @@ function App() {
           <Route path="/Order" exact component={Order} />
           <Route path="/About" exact component={About} />
           <Route path="/Privacy" exact component={Privacy} />
-          <Route >
-            not found
-            </Route>
           <Redirect from="/" to="Home" />
         </Switch>
         <Footer />
